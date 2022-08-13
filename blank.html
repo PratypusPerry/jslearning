@@ -7,9 +7,15 @@
     <title>JSLEARN</title>
 </head>
 <body>
+    <button onclick="timedate()">Try it</button>
+    <p id="Demo"></p>
     <script>
         var a= prompt("I am a baby of age");
         console.log(a);
+        function timedate(){
+            var t= new Date();
+            document.getElementById("Demo").innerHTML=t;
+        }
     </script>
 </body>
 </html>
