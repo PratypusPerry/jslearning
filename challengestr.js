@@ -5,6 +5,7 @@ console.log(str.substring(3,7));
 console.log(str.substr(1,5));
 var st= " P, r, t, t, y";
 console.log(st.split(","));
+console.log(st.split(",")[0]);
 console.log(st);
 console.log(String.fromCharCode(65,66,67,68,69));
 console.log(str.indexOf("rat"));
