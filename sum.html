@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dosum</title>
+</head>
+<body>
+    
+        <p>First Number<input type="number" id="n1">Second Number <input type="number" id="n2"></p>
+        <button onclick="total()">Sum</button>
+        <p id="s0s"></p>
+    
+    <script>
+        function total(){
+            var a= parseInt(document.getElementById("n1").value), b= parseInt(document.getElementById("n2").value);
+            // a=parseInt(a);
+            // b=parseInt(b);
+            var s= a+b;
+            document.getElementById("s0s").innerHTML=s;
+        }
+    </script>
+</body>
+</html>
