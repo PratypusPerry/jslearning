@@ -9,8 +9,14 @@
 <body>
     
         <p>First Number<input type="number" id="n1">Second Number <input type="number" id="n2"></p>
-        <button onclick="total()">Sum</button>
-        <p id="s0s"></p>
+        <button onclick="total()"">Sum</button>
+        <button onclick="subtract()"">Difference</button>
+        <button onclick="multiply()"">Multiply</button>
+        <button onclick="div()"">Divide</button>
+        <p id="s0s">Total:</p>
+        <p id="s1s">Subs:</p>
+        <p id="s2s">Product:</p>
+        <p id="s3s">Div:</p>
     
     <script>
         function total(){
@@ -19,6 +25,33 @@
             // b=parseInt(b);
             var s= a+b;
             document.getElementById("s0s").innerHTML=s;
+        }
+        function subtract(){
+            var a= parseInt(document.getElementById("n1").value), b= parseInt(document.getElementById("n2").value);
+            // a=parseInt(a);
+            // b=parseInt(b);
+            if(a>=b)
+            var s= a-b;
+            else
+            var s=b-a;
+            document.getElementById("s1s").innerHTML=s;
+        }
+        function multiply(){
+            var a= parseInt(document.getElementById("n1").value), b= parseInt(document.getElementById("n2").value);
+            // a=parseInt(a);
+            // b=parseInt(b);
+            var s= a*b;
+            document.getElementById("s2s").innerHTML=s;
+        }
+        function div(){
+            var a= parseInt(document.getElementById("n1").value), b= parseInt(document.getElementById("n2").value);
+            // a=parseInt(a);
+            // b=parseInt(b);
+            if(a>=b)
+            var s= a/b;
+            else
+            var s=b/a;
+            document.getElementById("s3s").innerHTML=s;
         }
     </script>
 </body>
