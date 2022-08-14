@@ -13,12 +13,14 @@
         <button onclick="subtract()" id="s11s">Difference</button>
         <button onclick="multiply()"  id="s22s">Multiply</button>
         <button onclick="div()" id="s33s">Divide</button>
+        <button onclick="refresh()" id="s44s">Delete</button>
         <p id="s0s">Total:</p>
         <p id="s1s">Subs:</p>
         <p id="s2s">Product:</p>
         <p id="s3s">Div:</p>
     
     <script>
+        document.getElementById("s44s").disabled= true;
         function total(){
             var a= parseInt(document.getElementById("n1").value), b= parseInt(document.getElementById("n2").value);
             // a=parseInt(a);
@@ -29,6 +31,7 @@
             document.getElementById("s11s").disabled= false;
             document.getElementById("s22s").disabled= false;
             document.getElementById("s33s").disabled= false;
+            document.getElementById("s44s").disabled= false;
             document.getElementById("s0s").innerHTML=`${s} is the sum`;
             // x.appendChild(document.createElement("p").appendChild(document.createTextNode(" Done")));
             // y.disabled= true;
@@ -46,6 +49,7 @@
             document.getElementById("s11s").disabled= true;
             document.getElementById("s22s").disabled= false;
             document.getElementById("s33s").disabled= false;
+            document.getElementById("s44s").disabled= false;
             document.getElementById("s1s").innerHTML=`${s} is the difference`;
         }
         function multiply(){
@@ -57,6 +61,7 @@
             document.getElementById("s11s").disabled= false;
             document.getElementById("s22s").disabled= true;
             document.getElementById("s33s").disabled= false;
+            document.getElementById("s44s").disabled= false;
             document.getElementById("s2s").innerHTML=`${s} is the product`;
         }
         function div(){
@@ -71,7 +76,21 @@
             document.getElementById("s11s").disabled= false;
             document.getElementById("s22s").disabled= false;
             document.getElementById("s33s").disabled= true;
+            document.getElementById("s44s").disabled= false;
             document.getElementById("s3s").innerHTML=`${s} is the quotient`;
+        }
+        function refresh(){
+            document.getElementById("n1").value=null;
+            document.getElementById("n2").value=null;
+            document.getElementById("s0s").innerHTML="Total:";
+            document.getElementById("s1s").innerHTML="Subs:";
+            document.getElementById("s2s").innerHTML="Product:";
+            document.getElementById("s3s").innerHTML="Div:";
+            document.getElementById("s00s").disabled= false;
+            document.getElementById("s11s").disabled= false;
+            document.getElementById("s22s").disabled= false;
+            document.getElementById("s33s").disabled= false;
+            document.getElementById("s44s").disabled= true;
         }
     </script>
 </body>
