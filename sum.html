@@ -9,7 +9,7 @@
 <body>
     
         <p>First Number<input type="number" id="n1">Second Number <input type="number" id="n2"></p>
-        <button onclick="total()">Sum</button>
+        <button onclick="total()" id="s00s">Sum</button>
         <button onclick="subtract()">Difference</button>
         <button onclick="multiply()">Multiply</button>
         <button onclick="div()">Divide</button>
@@ -24,7 +24,10 @@
             // a=parseInt(a);
             // b=parseInt(b);
             var s= a+b;
-            document.getElementById("s0s").innerHTML=s;
+            var x= document.querySelector("#s0s");
+            document.getElementById("s0s").innerHTML=`${s} is the sum`;
+            // x.appendChild(document.createElement("p").appendChild(document.createTextNode("Done")));
+            // document.getElementById("s0s").innerHTML=`${s} is the sum`;
         }
         function subtract(){
             var a= parseInt(document.getElementById("n1").value), b= parseInt(document.getElementById("n2").value);
