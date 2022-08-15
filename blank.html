@@ -7,7 +7,7 @@
     <title>JSLEARN</title>
 </head>
 <body>
-    <button onclick="timedate()">Try it</button>
+    <button onclick="timedate()" id="btn">Try it</button>
     <p id="Demo"></p>
     <script>
         var a= prompt("I am a baby of age");
@@ -15,7 +15,11 @@
         function timedate(){
             var t= new Date();
             document.getElementById("Demo").innerHTML=t;
+            setInterval(timedate, 1000);
         }
+        // setTimeout(timedate, 1000);
+        document.getElementById("btn").addEventListener("click",timedate);
+        // setTimeout(timedate, 3000);
     </script>
 </body>
 </html>
