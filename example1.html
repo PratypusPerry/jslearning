@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon</title>
+    <link rel="stylesheet" href="example1.css">
+</head>
+<body>
+    <div id="container300">
+        
+    </div>
+    <script>
+        const content= document.getElementById("container300");
+        const request= new XMLHttpRequest();
+        request.open('GET', "https://restcountries.com/v3.1/name/japan");
+        request.send();
+        request.addEventListener('load', function(){
+           const [a] = JSON.parse(this.responseText);
+        //    console.log(a);
+        const htmlD= `<fieldset>
+            <div class="flagimg"><img src="https://flagcdn.com/w320/jp.png" alt="no">
+            <span class="natnam"><h2>${a.name.common}</h2></div>
+            <div class="capital"><h3>Capital:${a.capital}</h3>
+                <h3>Currency:Yen<br>(${a.currencies.JPY.symbol})</h3>
+                <h3>Population:${a.population-836021}</h3>
+            </div>
+    </fieldset>`;
+    content.insertAdjacentHTML('afterbegin',htmlD)
+        })
+    </script>
+</body>
+</html>

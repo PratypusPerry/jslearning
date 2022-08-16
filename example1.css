@@ -1,0 +1,32 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html{
+    background-image: linear-gradient(to right, rgb(31, 15, 203), violet 20%);
+    background-size: 99% 400%;
+    background-repeat: no-repeat;
+}
+#container300{
+    /* width: 99%; */
+    margin-left: 34%;
+    margin-top: 11%;
+}
+#container300 fieldset{
+    width: 550px;
+    border: 2px blanchedalmond;
+    background-color: burlywood;
+    border-radius: 12px;
+} 
+img{
+    padding-left: 120px;
+    padding-top: 50px;
+}
+.flagimg .natnam{
+    text-align: center;
+}
+.capital{
+    display: grid;
+    grid-template-columns: 30% 36% 33%;
+    grid-template-rows: 98%;
+    text-align: center;
+}
