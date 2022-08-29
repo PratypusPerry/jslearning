@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capturing And Bubbling</title>
+    <style>
+        *{
+            margin-left: 15%;
+            margin-top: 10%;
+        }
+        .parentDiv{
+            background-color: blue;
+            height: 300px;
+            width: 300px;
+            cursor: pointer;
+        }
+        .childDiv{
+            background-color: bisque;
+            height: 150px;
+            width: 150px;
+            cursor: pointer;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="parentDiv" id="parentDiv0">
+    <div class="childDiv" id="childDiv0">
+
+    </div>
+</div>
+<script>
+    const parent= document.getElementById("parentDiv0");
+    const child= document.getElementById("childDiv0");
+
+
+//Default Bubbling
+    
+    // const parentCall = () => {
+    //     alert("Parent Called");
+    //     console.log("Parent Called");
+    // }
+    // const childCall = () => {
+    //     alert("Child Called");
+    //     console.log("Child Called");
+    // }
+
+//Only One at a time(No Bubbling no No Capturing)
+
+     // const parentCall = () => {
+    //     alert("Parent Called");
+    //     console.log("Parent Called");
+    // }
+    // const childCall = () => {
+    //     alert("Child Called");
+    //     console.log("Child Called");
+    //     event.stopPropagation();
+    // }
+
+//Event Capturing
+    
+    // const parentCall = () => {
+    //     alert("Parent Called");
+    //     console.log("Parent Called");
+    // }
+    // const childCall = () => {
+    //     alert("Child Called");
+    //     console.log("Child Called");
+    // }
+    parent.addEventListener('click', parentCall, true);
+    child.addEventListener('click', childCall, true);
+</script>
+</body>
+</html>
