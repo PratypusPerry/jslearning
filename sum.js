@@ -55,7 +55,7 @@ var a= parseInt(document.getElementById("n1").value), b= parseInt(document.getEl
             // document.getElementById("s11s").disabled= false;
             // document.getElementById("s22s").disabled= false;
             document.getElementById("s33s").disabled= true;
-            document.getElementById("s44s").disabled= false;
+            // document.getElementById("s44s").disabled= false;
             document.getElementById("s3s").innerHTML=`${s} is the quotient`;
         }
         function refresh(){

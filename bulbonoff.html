@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulbonoff</title>
+</head>
+<body>
+    <img src="LIGHTOFF.png" alt="" srcset="" width="100%" height="50%" id="bu0lb">
+    <button id="butonoff" onclick="light()">Turn ON</button>
+    <script>
+        var c=0;
+        function light() {
+            if(c==0)
+            {
+                document.getElementById('bu0lb').src='LIGHTON.png';
+                document.getElementById('butonoff').innerHTML=`Turn OFF`;
+                c=1;
+            }
+            else
+            {
+                document.getElementById('bu0lb').src='LIGHTOFF.png';
+                document.getElementById('butonoff').innerHTML=`Turn ON`;
+                c=0; 
+            }
+           
+        }
+    </script>
+</body>
+</html>
