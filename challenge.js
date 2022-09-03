@@ -10,6 +10,7 @@ let newarr1= arr1.filter((en,index,arr1)=>{
     if((en*2)>10)
     return (en);
 })
+console.log(newarr1);
 let newarr2= newarr1.map((en,index,newarr1)=>{
     return (en*2);
 })
