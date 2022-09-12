@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conTainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 35, 35);
+}
+.conTainer img{
+    width: 50%;
+}
+.conTainer h1{
+    width: 50%;
+    text-align: center;
+    font-size: 100px;
+    color: #289df6;
+    padding: 40px;
+}
+.conTainer .bOx{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: #289df6;
+    padding: 0px 10px 20px 10px;
+    border-radius: 12px;
+}
+.conTainer .bOx p{
+    text-align: center;
+    /* justify-content: center; */
+    /* margin-top: 25%; */
+}
+.conTainer .bOx:hover{
+    box-shadow: 0 0 5px 0 ghostwhite,0 0 10px 0 ghostwhite,0 0 20px 0 ghostwhite,0 0 40px 0 ghostwhite;
+}
+.conTainer .bOx ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    list-style: none;
+    gap: 10px;
+}
+.conTainer .bOx h2{
+    margin: 2rem;
+    color:  rgb(39, 35, 35);
+}
+.conTainer .bOx button{
+    width: 10%;
+    margin-left: 45%;
+    padding: 5px 5px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.conTainer .bOx button:hover{
+    background-color: ghostwhite;
+    color: rgb(39, 35, 35);
+    box-shadow: 0 0 5px 0 ghostwhite,0 0 10px 0 ghostwhite,0 0 20px 0 ghostwhite,0 0 40px 0 ghostwhite;
+}
+.conTainer .showPlan{
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgb(39, 35, 35);
+}
+.columns{
+    padding-top: 15px;
+  }
+  .columns ul li ul{ 
+    display:  block;
+    width: 300px;
+  }
+  .columns ul{
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .price .header {
+    background-color: #289df6;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  
+  .button {
+      background-color: #289df6;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .pRice{
+    color: #289df6;
+    padding: 5px;
+    text-align: center;
+  }  
